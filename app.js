@@ -24,7 +24,7 @@ const app = {
         check(){
             if(this.type=='Csgo'){
             for(let key in this.csgo){
-                if(this.csgo[key]==this.text){
+                if(this.csgo[key].toLowerCase()==this.text.toLowerCase()){
                     alert('Такой игрок уже существует')
                     this.text=''
                     this.type=''
@@ -32,7 +32,7 @@ const app = {
                 }                
             }}else if(this.type=='Dota'){
                 for(let key in this.dota){
-                    if(this.dota[key]==this.text){
+                    if(this.dota[key].toLowerCase()==this.text.toLowerCase()){
                         alert('Такой игрок уже существует')
                         this.text=''
                         this.type=''
@@ -40,7 +40,7 @@ const app = {
                     }                
             }}else if(this.type=='Minecraft'){
                 for(let key in this.minecraft){
-                    if(this.minecraft[key]==this.text){
+                    if(this.minecraft[key].toLowerCase()==this.text.toLowerCase()){
                         alert('Такой игрок уже существует')
                         this.text=''
                         this.type=''
